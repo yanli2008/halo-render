@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: halo-blog
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: HALO_EXTERNAL_URL
+        value: https://halo-blog.onrender.com
